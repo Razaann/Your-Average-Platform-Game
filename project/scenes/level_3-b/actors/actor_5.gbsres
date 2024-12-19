@@ -1,0 +1,200 @@
+{
+  "_resourceType": "actor",
+  "id": "04a57279-f289-4552-aad7-739991ca5e53",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "00ebd382-584a-427c-9833-dcc917a70e41",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_14",
+  "script": [
+    {
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "up",
+        "otherActorId": "$self$",
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "1",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "0e27c127-d3d1-41d6-9cac-f1e0be494d6a",
+            "children": {}
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "f10418a1-98ee-4dca-975c-89fc2c627fde",
+            "children": {}
+          },
+          {
+            "id": "8673094b-6f39-4270-937d-efdb8815e078",
+            "command": "EVENT_ACTOR_STOP_UPDATE",
+            "args": {
+              "actorId": "0"
+            },
+            "children": {}
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Enemy Dead",
+              "loopAnim": true
+            },
+            "id": "ea4eaa1b-eaad-4cfa-98a8-51f222eafcce",
+            "children": {}
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "079c2c73-6621-4b38-a73f-e393262acedd",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 5
+            },
+            "id": "28940e51-8e6e-4207-b9b8-0c29bcdc6ba1",
+            "children": {}
+          },
+          {
+            "command": "EVENT_PLAYER_BOUNCE",
+            "args": {
+              "height": "medium"
+            },
+            "id": "b6a9cfc7-9044-455e-a0cd-5f0aaee16ddd",
+            "children": {}
+          },
+          {
+            "id": "4f17dbfb-4245-4af6-8404-111a7cb49248",
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5
+            },
+            "children": {}
+          },
+          {
+            "id": "bd0cbd1a-e8d9-4684-9912-e348be7bb7b0",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            },
+            "children": {}
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 8
+              },
+              "y": {
+                "type": "number",
+                "value": 10
+              }
+            },
+            "id": "a5267165-e76c-4852-8f24-cb45282348bc",
+            "children": {}
+          },
+          {
+            "id": "6a65de68-ced1-4a47-b9e8-a7171dbdd09d",
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.1,
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "children": {}
+          }
+        ]
+      },
+      "id": "db4f3c2d-fe42-4455-a29e-2af64b084799"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [
+    {
+      "id": "f30c8bc8-9ef5-4244-8244-58881023333d",
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "left",
+        "otherActorId": "0",
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "a797687f-d8c5-471b-8489-486510ce5ec7",
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "0",
+              "x": {
+                "type": "number",
+                "value": -4
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "moveType": "horizontal",
+              "useCollisions": true
+            },
+            "children": {}
+          }
+        ],
+        "false": [
+          {
+            "id": "767f19a7-72e9-425c-b22e-a8ff7cf49a91",
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "0",
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "moveType": "horizontal",
+              "useCollisions": true
+            },
+            "children": {}
+          }
+        ]
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 91,
+  "y": 19,
+  "_index": 4
+}

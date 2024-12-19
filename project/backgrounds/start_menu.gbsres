@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "9c65a656-5fc5-4095-951e-963b68658552",
+  "name": "Start Menu",
+  "symbol": "bg_start_menu",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Start Menu.png",
+  "tileColors": "",
+  "autoColor": false
+}

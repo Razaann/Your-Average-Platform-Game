@@ -1,0 +1,56 @@
+{
+  "_resourceType": "scene",
+  "id": "ab73d829-166a-4d7a-8810-ce21728d8c5b",
+  "_index": 6,
+  "name": "Level 2-A",
+  "backgroundId": "d6fcf546-f461-4f3f-8524-c70915521ee9",
+  "tilesetId": "",
+  "width": 134,
+  "height": 24,
+  "type": "PLATFORM",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0082+0f!0085+0f!0085+0f!0085+0f!0037+01a+0044+0f!0085+0f!0055+01e+0022+0f!0085+0f!0057+0f!008+0f!0024+0f!0057+0f!008+0f!0024+0f!0047+01a+006+0f!008+0f!0012+016+00c+0f!0057+0f!008+0f!0024+0f!0033+0110+006+0f!004+0f!008+0f!008+0f!0024+0f!0049+0f!004+0f!008+0f!008+0f!0024+0f!0035+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!0024+0f!0035+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!0024+0f!0035+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!006+018+0016+0f!0035+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!0024+0f!0027+018+006+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!008+0f!002+0f!0010+01c+0032+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!008+0f!002+0f!001c+0f20+006+0f!002+0f!008+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!008+0f!002+0f!0012+0f!0028+0f!006+0f!002+0f!008+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!008+0f!002+0f!0012+0f!0028+0f!006+0f!002+0f!008+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!008+0f!002+0f!0012+0f!0028+0f!006+0f!002+0f!008+0f!00a+0f!008+0f!004+0f!008+0f!008+0f!008+0f!002+0f!0012+0f!009+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_8",
+  "x": 248,
+  "y": 648,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "111d2d3b-ecc1-44a2-a76f-e72a3de53e49"
+      },
+      "id": "e1a5bb18-e4c8-437c-a8c2-dd738378333c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Stage 2"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "top",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "804aa076-6c8d-4d83-b90a-339b5a7e60d9"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "45291967-fd58-4a5d-b2a1-891641e1518d"
+}

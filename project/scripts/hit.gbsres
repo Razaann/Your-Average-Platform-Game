@@ -1,0 +1,39 @@
+{
+  "_resourceType": "script",
+  "id": "836db98c-8c45-48a5-8a0d-d06df3677ac4",
+  "name": "Hit",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_1",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "d61f3277-a07b-4748-a64c-5045d7e19947"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.1,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "def91f6f-83b3-432d-8dbb-96fafa01fcb4"
+    }
+  ]
+}

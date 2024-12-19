@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "12972dc2-85b6-4377-ada8-465e00e236e2",
+  "name": "GB Screen",
+  "symbol": "bg_gb_screen",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "GB Screen.png",
+  "tileColors": "",
+  "autoColor": false
+}

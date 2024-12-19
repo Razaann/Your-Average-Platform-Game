@@ -1,0 +1,15 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "1313dae7-4baa-4109-a20b-14a75dc7d0e1__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    },
+    {
+      "id": "1",
+      "name": "Enemy Dead",
+      "symbol": "var_enemy_dead"
+    }
+  ]
+}

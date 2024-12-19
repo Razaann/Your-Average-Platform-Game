@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "5dcf180b-7b8a-4365-a248-962d01a184c3",
+  "name": "Victory",
+  "symbol": "bg_victory",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Victory.png",
+  "tileColors": ""
+}
